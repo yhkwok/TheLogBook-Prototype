@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yhjonathankwok.thelogbook_prototype.MainActivity"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Type"/>
+
+        <RadioButton
+            android:id="@+id/radioGas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gas"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/radioService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textSpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spent"
+        android:layout_below="@+id/radioGroup"/>
+
+    <EditText
+        android:id="@+id/editSpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e.g.$ 34.56"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textSpent"/>
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_below="@+id/editSpent"/>
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e.g. 2017/3/9"
+        android:inputType="datetime"
+        android:layout_below="@+id/textDate"/>
+
+    <TextView
+        android:id="@+id/textODO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ODO"
+        android:layout_below="@+id/editDate"/>
+
+    <EditText
+        android:id="@+id/editODO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e.g. 109080"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textODO"/>
+
+    <TextView
+        android:id="@+id/textTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip"
+        android:layout_below="@+id/editODO"/>
+
+    <EditText
+        android:id="@+id/editTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e.g. 220.5"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textTrip"/>
+
+    <TextView
+        android:id="@+id/textGallon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallon"
+        android:layout_below="@+id/editTrip"/>
+
+    <EditText
+        android:id="@+id/editGallon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e.g. 13.006"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textGallon"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_below="@+id/editGallon"/>
+
+</LinearLayout>
